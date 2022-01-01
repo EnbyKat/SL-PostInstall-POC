@@ -20,6 +20,7 @@ if flatinstall == 0:
     # os.system(f'sudo pacman -Sy && sudo pacman -S {install}')
     print(f"Updating repos and installing packages {install} from the Arch Linux repos")
 else:
+    # os.system("sudo pacman -S flatpak")
     # os.system(f'flatpak install flathub {flatinstall}')
     print(f"Installing {flatinstall} from Flathub, as these packages do not exist in the Arch repos.")
     # os.system(f'sudo pacman -S {newinstall}")
